@@ -1,6 +1,6 @@
 # jekyll-html-encode
 
-Converts strings to HTML Escape characters
+Converts strings to HTML Escape Entity characters
 
 ## Example
 
@@ -22,3 +22,9 @@ Then, put the following into your `_config.yml`:
 plugins:
 - jekyll-email-protect
 ```
+
+## Why?
+
+I made this to add a little extra obscurity for webscrapers looking to grab my email. I made it to use in conjunction with [jekyll-email-protect](https://github.com/vwochnik/jekyll-email-protect).
+
+It may not have much benefit at all, as it seems like modern browsers tend to just render the HTML Escape Entities as text in source anyway and I've not really had much a chance to test it, however I'd rather be safe than have a hundred thousand emails about my car's extended warranty or _"magic pills"_ flooding my inbox when I publish my website.
